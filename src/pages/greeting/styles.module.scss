@@ -1,12 +1,14 @@
 .greeting {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100vw;
   height: 100vh;
   gap: 200px;
-  background: #0055dd40;
+  // background: #0055dd40;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  padding: 256px;
 }
 
 .botImg {
@@ -15,10 +17,48 @@
 }
 
 .greetingText {
-  font-family: "Arial Narrow";
   display: flex;
   font-size: 96px;
   font-weight: 600;
-  margin-right: 64px;
   color: #ffb600;
+}
+
+.about {
+  position: absolute;
+  top: 50px;
+  right: 350px;
+  max-width: 400px;
+  font-size: 20px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  -webkit-box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+  font-weight: 600;
+
+  &:last-of-type {
+    font-weight: 500;
+  }
+  // animation: float 5s ease-in-out infinite;
+  &:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 20px solid white;
+    position: absolute;
+    border-radius: 25%;
+    left: -12px;
+    bottom: -50px;
+  }
+  &:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 12px solid white;
+    position: absolute;
+    border-radius: 25%;
+    left: -44px;
+    bottom: -60px;
+  }
 }

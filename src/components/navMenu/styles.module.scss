@@ -1,0 +1,25 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	position: absolute;
+	top: 16px;
+	right: 32px;
+	color: black;
+	font-size: 14px;
+	border-radius: 10px;
+	padding: 8px;
+	font-weight: 600;
+	-webkit-box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: -7px 9px 8px 0px rgba(34, 60, 80, 0.2);
+	background-color: white;
+}
+
+.link {
+	color: inherit;
+}
+
+.activeLink {
+	color: rgba(0,212,255,1);
+}

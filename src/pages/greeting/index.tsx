@@ -9,7 +9,10 @@ const Greeting: FC = () => {
 			<div className={styles.botImg}>
 				<img src={botImgSrc}/>
 			</div>
-		    <p className={styles.greetingText}>Hi!</p>
+			<div className={styles.about}>
+		    	<p className={styles.greetingText}>Hi!</p>
+				<p>Привет! Рад тебя тут видеть! Я крутой бот для знакомств, прошу любить и жаловать.</p>
+			</div>
 	    </div>
     );
 };

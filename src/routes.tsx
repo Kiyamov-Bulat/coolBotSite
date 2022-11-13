@@ -2,8 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import paths from './paths';
 
-const [Greeting] = [
-	import('./pages/greeting')
+const [Greeting, Intro] = [
+	import('./pages/greeting'),
+	import('./pages/intro')
 ].map((module) => {
 	const LazyElement = React.lazy(() => module);
 
