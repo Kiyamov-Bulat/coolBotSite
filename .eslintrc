@@ -1,0 +1,96 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "root": true,
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-shadow": [
+      "warn"
+    ],
+    "@typescript-eslint/semi": [
+      "error"
+    ],
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-extra-parens": [
+      "off"
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "off",
+      {
+        "multiline": {
+          "delimiter": "none"
+        }
+      }
+    ],
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/member-ordering": "warn",
+    "@typescript-eslint/no-magic-numbers": [
+      "error",
+      {
+        "ignoreDefaultValues": true,
+        "ignoreNumericLiteralTypes": true,
+        "ignoreEnums": true,
+        "enforceConst": true,
+        "ignoreReadonlyClassProperties": true,
+        "ignore": [
+          0,
+          1,
+          2,
+          10,
+          24,
+          60,
+          1000
+        ]
+      }
+    ],
+    "@typescript-eslint/brace-style": [
+      "warn",
+      "1tbs"
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "@typescript-eslint/func-call-spacing": [
+      "error",
+      "never"
+    ],
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/prefer-for-of": "warn",
+    "@typescript-eslint/no-unnecessary-type-arguments": "warn",
+    "@typescript-eslint/prefer-function-type": "warn",
+    "@typescript-eslint/prefer-readonly": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_$"
+      }
+    ],
+    "@typescript-eslint/no-unsafe-call": "warn"
+  }
+}

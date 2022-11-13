@@ -1,0 +1,24 @@
+.greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 200px;
+  background: #0055dd40;
+}
+
+.botImg {
+  display: flex;
+  flex-direction: row;
+}
+
+.greetingText {
+  font-family: "Arial Narrow";
+  display: flex;
+  font-size: 96px;
+  font-weight: 600;
+  margin-right: 64px;
+  color: #ffb600;
+}
